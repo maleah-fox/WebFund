@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script>console.log($())</script>
+    <title>My jQuery basic assignment</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Welcome to my assignment!</h1>
+                <ul class="nav">
+                    <li><button id="home">Home</button></li>
+                    <li><button id="show">Show</button></li>
+                    <li><button id="learnMore">Flowers</button></li>
+                    <li><button id="book">Learn</button></li>
+                    <li><button id="faq">FAQ</button></li>
+                </ul>
+        </header>
+        <main>
+            <img id="homeImg" src="./jQueryPhotos/housepic.jfif" alt="">
+            <div class="card">
+                <h2>Look at this!</h2>
+                <p>Isn't this super exciting? </p>
+                <img src="" alt="">
+            </div>
+            <img style="display: none;" id= "showImg" src="./jQueryPhotos/mansion.jfif" alt="">
+            <div class="card">
+                <h2>Isn't this cool?</h2>
+                <p>Are you having fun?</p>
+                <img style="display: none;" id = "flowers" src="./jQueryPhotos/flowers.jfif" alt="">
+            </div>
+            <div class="card">
+                <h2>Just having fun!</h2>
+                <p>Do you want to keep learning?</p>
+                <img style="display: none;" id="bookImg" src="./jQueryPhotos/books.jfif" alt="">
+            </div>
+        </main>
+        <footer>
+            <p id = "faqTxt">If you have any questions, please refer back to the course</p>
+        </footer>
+    <script>
+        $("p").append("<strong>Yes!</strong>");
+
+        $("#home").click(function() {
+            $("#homeImg").hide( "slow" );
+        });
+
+        $("#show").click(function() {
+            $("#showImg").show("slow",function(){
+
+            });
+        });
+
+        $("#learnMore").click(function() {
+            $("#flowers").slideDown("slow",function(){
+
+            });
+        });
+
+        $("#book").click(function(){
+            $("#bookImg").slideToggle("slow",function(){
+
+            });
+        });
+
+        $("#faq").click(function(){
+            $("#faqTxt").slideUp("slow", function(){
+                
+            });
+        });
+
+
+    </script>
+    </div>
+    
+</body>
+</html>

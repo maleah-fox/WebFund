@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover In/Out</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+    <img src="./mysteryBox.jfif" data-alt-src="./blueShell.jfif">
+    <img src="./mysteryBox.jfif" data-alt-src="./coin.jfif">
+    <img src="./mysteryBox.jfif" data-alt-src="./mushroom.jfif">
+    <img src="./mysteryBox.jfif" data-alt-src="./golden mushroom.jfif">
+
+
+<script>
+    $("img").hover(function(){
+        var src = $(this).attr("src");
+        $(this).attr("src", $(this).attr('data-alt-src'));
+        $(this).attr("data-alt-src", src);
+        
+    });
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Dissappearing Ninja</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Dissappearing Ninja</h1>
+        </header>
+        <img id="boulder" src="./ninjaPics/Boulder_Badge.png" alt="">
+        <img id="cascade" src="./ninjaPics/Cascade_Badge.png" alt="">
+        <img id="earth" src="./ninjaPics/Earth_Badge.png" alt="">
+        <img id="marsh" src="./ninjaPics/Marsh_Badge.png" alt="">
+        <div></div>
+        <img id="rainbow" src="./ninjaPics/Rainbow_Badge.png" alt="">
+        <img id="soul" src="./ninjaPics/Soul_Badge.png" alt="">
+        <img id="thunder" src="./ninjaPics/Thunder_Badge.png" alt="">
+        <img id="volcano" src="./ninjaPics/Volcano_Badge.png" alt="">
+        <footer>
+            <button id="restore">Restore</button>
+        </footer>
+    </div>
+    <script>
+        // $("#boulder").click(function(){
+        //     $(this).hide();
+        // });
+        // $("#cascade").click(function(){
+        //     $(this).hide();
+        // });
+        // $("#earth").click(function(){
+        //     $(this).hide();
+        // });
+        // $("#marsh").click(function(){
+        //     $(this).hide();
+        // });
+        // $("#rainbow").click(function(){
+        //     $(this).hide();
+        // });
+        // $("#soul").click(function(){
+        //     $(this).hide();
+        // });
+        // $("#thunder").click(function(){
+        //     $(this).hide();
+        // });
+        // $("#volcano").click(function(){
+        //     $(this).hide();
+        // });
+
+        $("img").click(function(){
+            $(this).hide();
+        });
+
+        $("button").click(function(){
+            $("img").show("slow");
+        });
+    </script>
+</body>
+</html>
